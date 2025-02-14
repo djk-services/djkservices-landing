@@ -10,7 +10,7 @@ export const Hero = () => {
             Leading Tech Innovation
           </span>
           <h1 className="text-4xl md:text-6xl font-bold leading-tight max-w-4xl">
-            Expert Technology Solutions in AI, Mobile Apps & Cybersecurity
+            Expert Technology Solutions in AI, App Dev & Cybersecurity
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
             We specialize in developing consumer applications, implementing generative AI solutions, and ensuring robust cybersecurity for modern businesses.
