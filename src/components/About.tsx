@@ -9,10 +9,10 @@ export const About = () => {
           <div className="animate-fadeIn">
             <span className="text-primary font-medium">About Us</span>
             <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
-              Driving Digital Innovation Through Expert Consulting
+              Driving Innovation Through Advanced Technology Solutions
             </h2>
             <p className="text-muted-foreground mb-8">
-              With years of experience in technology consulting, we've helped numerous businesses achieve their digital transformation goals. Our team of experts brings deep industry knowledge and technical expertise to every project.
+              With extensive experience in consumer app development, generative AI implementation, and cybersecurity, we've helped numerous businesses transform their digital presence. Our team brings deep technical expertise in modern technologies and a track record of successful project delivery across various industries.
             </p>
             <Button size="lg" asChild>
               <a href="#contact">Work With Us</a>

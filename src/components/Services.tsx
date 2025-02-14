@@ -1,27 +1,27 @@
 
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Computer, Globe, Users, ChartBar } from "lucide-react";
+import { Smartphone, Brain, Shield, Globe } from "lucide-react";
 
 const services = [
   {
+    title: "Consumer App Development",
+    description: "Building intuitive, scalable mobile and web applications that deliver exceptional user experiences.",
+    icon: Smartphone,
+  },
+  {
+    title: "Generative AI Solutions",
+    description: "Implementing cutting-edge AI technologies to automate processes and create innovative user experiences.",
+    icon: Brain,
+  },
+  {
+    title: "Cybersecurity Services",
+    description: "Comprehensive security solutions to protect your digital assets and ensure data privacy.",
+    icon: Shield,
+  },
+  {
     title: "Digital Strategy",
-    description: "Develop comprehensive digital transformation strategies tailored to your business goals.",
+    description: "Strategic technology consulting to align your digital initiatives with business objectives.",
     icon: Globe,
-  },
-  {
-    title: "Technology Implementation",
-    description: "Expert implementation of cutting-edge technologies to enhance your operations.",
-    icon: Computer,
-  },
-  {
-    title: "Team Augmentation",
-    description: "Skilled technology professionals to supplement your existing teams.",
-    icon: Users,
-  },
-  {
-    title: "Performance Analytics",
-    description: "Data-driven insights to measure and optimize your technology investments.",
-    icon: ChartBar,
   },
 ];
 
@@ -30,9 +30,9 @@ export const Services = () => {
     <section id="services" className="py-32 px-6 bg-background">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fadeIn">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Expertise</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive technology consulting services to drive your business forward
+            Specialized technology services focusing on modern app development, AI integration, and security
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
