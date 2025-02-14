@@ -4,7 +4,7 @@ import { Smartphone, Brain, Shield, Globe } from "lucide-react";
 
 const services = [
   {
-    title: "Consumer App Development",
+    title: "App Development",
     description: "Building intuitive, scalable mobile and web applications that deliver exceptional user experiences.",
     icon: Smartphone,
   },
