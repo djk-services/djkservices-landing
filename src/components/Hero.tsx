@@ -13,7 +13,7 @@ export const Hero = () => {
             Expert Solutions in AI, Cybersecurity, and Consumer Experiences
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            We specialize in developing consumer applications, implementing generative AI solutions, and ensuring robust cybersecurity for modern businesses.
+            We specialize in crafting unique, professional applications, leveraging the latest advances in generative AI and cybersecurity, for modern businesses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <Button size="lg" asChild>
