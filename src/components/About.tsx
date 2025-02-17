@@ -12,7 +12,7 @@ export const About = () => {
               Driving Innovation For Fortune 500 Companies
             </h2>
             <p className="text-muted-foreground mb-8">
-              With extensive experience in consumer app development, generative AI implementation, and cybersecurity, we've helped numerous businesses transform their digital presence. Our team brings deep technical expertise in modern technologies and a track record of successful project delivery across various industries.
+              Backed with over 15 years of combined expertise in app development, cybersecurity, and product innovation, our team specializes in building secure, high-performant digital experiences for a wide variety of audiences. We've helped industry leaders like American Express, Disney, Capital One, and Twitch  develop cutting-edge user-facing applications. Our passion for technology and commitment to driving value for our clients empower us to create unique solutions that exceed expectations.
             </p>
             <Button size="lg" asChild>
               <a href="#contact">Work With Us</a>
