@@ -9,7 +9,7 @@ export const About = () => {
           <div className="animate-fadeIn">
             <span className="text-primary font-medium">About Us</span>
             <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
-              Driving Innovation Through Advanced Technology Solutions
+              Driving Innovation For Fortune 500 Companies
             </h2>
             <p className="text-muted-foreground mb-8">
               With extensive experience in consumer app development, generative AI implementation, and cybersecurity, we've helped numerous businesses transform their digital presence. Our team brings deep technical expertise in modern technologies and a track record of successful project delivery across various industries.
