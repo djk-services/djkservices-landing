@@ -15,7 +15,7 @@ const services = [
   },
   {
     title: "Cybersecurity Services",
-    description: "Comprehensive security solutions to protect your digital assets and ensure data privacy.",
+    description: "Comprehensive security solutions to protect your digital assets and ensure data privacy at any scale.",
     icon: Shield,
   },
   {
