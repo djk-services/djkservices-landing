@@ -15,7 +15,7 @@ export const Contact = () => {
               Let's Build Something Great Together
             </h2>
             <p className="text-muted-foreground">
-              Ready to transform your business with technology? Get in touch with our team of experts to discuss your project.
+              Ready to transform your business with us? Get in touch with our team of experts to discuss your project.
             </p>
           </div>
           <Card className="animate-fadeIn">
