@@ -33,20 +33,14 @@ export const Clients = () => {
           <div className="animate-marquee flex items-center space-x-16 px-4">
             {clients.map((client) => (
               <div key={client.name} className="flex-shrink-0">
-                {/* Fallback to placeholder while waiting for logos */}
-                <div className="w-32 h-12 bg-muted-foreground/10 rounded flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">{client.name}</span>
-                </div>
+                <img src={client.logo} alt={client.name} className="w-32 h-12 object-contain" />
               </div>
             ))}
           </div>
           <div className="animate-marquee flex items-center space-x-16 px-4" aria-hidden="true">
             {clients.map((client) => (
               <div key={`${client.name}-duplicate`} className="flex-shrink-0">
-                {/* Fallback to placeholder while waiting for logos */}
-                <div className="w-32 h-12 bg-muted-foreground/10 rounded flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">{client.name}</span>
-                </div>
+                <img src={client.logo} alt={client.name} className="w-32 h-12 object-contain" />
               </div>
             ))}
           </div>
