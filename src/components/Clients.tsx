@@ -39,7 +39,7 @@ export const Clients = () => {
               </div>
             ))}
           </div>
-          <div className="animate-marquee flex items-center space-x-16 px-4" aria-hidden="true">
+          <div className="animate-marquee2 flex items-center space-x-16 px-4" aria-hidden="true">
             {clients.map((client) => (
               <div key={`${client.name}-duplicate`} className="flex-shrink-0">
                 <img src={client.logo} alt={client.name} className="w-32 h-12 object-contain" />
