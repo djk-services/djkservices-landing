@@ -1,10 +1,46 @@
 
+import { useState, FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/components/ui/use-toast";
 
 export const Contact = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    company: "",
+    message: ""
+  });
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    
+    const subject = encodeURIComponent(`New Request From ${formData.company}`);
+    const body = encodeURIComponent(
+      `You have a new request from ${formData.firstName} ${formData.lastName}:\n\n${formData.message}`
+    );
+    
+    const mailtoLink = `mailto:David.djkservices@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+
+    toast({
+      title: "Email client opened",
+      description: "Your message has been prepared in your default email client.",
+    });
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
   return (
     <section id="contact" className="py-32 px-6 bg-background">
       <div className="container max-w-6xl mx-auto">
@@ -24,14 +60,46 @@ export const Contact = () => {
               <CardDescription>Fill out the form below and we'll get back to you shortly.</CardDescription>
             </CardHeader>
             <CardContent>
-              <form className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <Input placeholder="First Name" />
-                  <Input placeholder="Last Name" />
+                  <Input 
+                    placeholder="First Name" 
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleInputChange}
+                    required
+                  />
+                  <Input 
+                    placeholder="Last Name" 
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleInputChange}
+                    required
+                  />
                 </div>
-                <Input type="email" placeholder="Email" />
-                <Input placeholder="Company" />
-                <Textarea placeholder="Your message" className="min-h-[120px]" />
+                <Input 
+                  type="email" 
+                  placeholder="Email" 
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                />
+                <Input 
+                  placeholder="Company" 
+                  name="company"
+                  value={formData.company}
+                  onChange={handleInputChange}
+                  required
+                />
+                <Textarea 
+                  placeholder="Your message" 
+                  className="min-h-[120px]"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required
+                />
                 <Button type="submit" className="w-full">Send Message</Button>
               </form>
             </CardContent>
