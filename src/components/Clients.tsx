@@ -4,23 +4,23 @@ import { cn } from "@/lib/utils";
 const clients = [
   {
     name: "American Express",
-    logo: "/amex-logo.svg",
+    logo: "/logos/amex_logo.svg",
   },
   {
     name: "Disney",
-    logo: "/disney-logo.svg",
+    logo: "/logos/disney_logo.png",
   },
   {
     name: "Capital One",
-    logo: "/capital-one-logo.svg",
+    logo: "/logos/capitalone_logo.png",
   },
   {
     name: "ReliaQuest",
-    logo: "/reliaquest-logo.svg",
+    logo: "/logos/reliaquest_logo.png",
   },
   {
     name: "Twitch",
-    logo: "/twitch-logo.svg",
+    logo: "/logos/twitch_logo.svg",
   },
 ];
 

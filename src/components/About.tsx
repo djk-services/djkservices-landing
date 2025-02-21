@@ -9,10 +9,10 @@ export const About = () => {
           <div className="animate-fadeIn">
             <span className="text-primary font-medium">About Us</span>
             <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
-              Driving Innovation For Fortune 500 Companies
+              Driving Innovation For Our Clients
             </h2>
             <p className="text-muted-foreground mb-8">
-              Backed with over 15 years of combined expertise in app development, cybersecurity, and product innovation, our team specializes in building secure, high-performant digital experiences for a wide variety of audiences. We've helped industry leaders like American Express, Disney, Capital One, and Twitch  develop cutting-edge user-facing applications. Our passion for technology and commitment to driving value for our clients empower us to create unique solutions that exceed expectations.
+              Backed with over 15 years of combined expertise in app development, cybersecurity, and product innovation, our team specializes in building secure, high-performant digital experiences for a wide variety of audiences. Our passion for technology and commitment to driving value for our clients empower us to create unique solutions that exceed their expectations.
             </p>
             <Button size="lg" asChild>
               <a href="#contact">Work With Us</a>
