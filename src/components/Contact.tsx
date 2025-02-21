@@ -24,8 +24,8 @@ export const Contact = () => {
     
     try {
       await emailjs.send(
-        'service_djk', // Replace with your EmailJS service ID
-        'template_djk', // Replace with your EmailJS template ID
+        'service_u55ss8c', // Replace with your EmailJS service ID
+        'template_m07j39h', // Replace with your EmailJS template ID
         {
           to_email: 'David.djkservices@gmail.com',
           from_name: `${formData.firstName} ${formData.lastName}`,
@@ -34,7 +34,7 @@ export const Contact = () => {
           message: formData.message,
           subject: `New Request From ${formData.company}`,
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'Gce6x2knbo2FzwQZe' // Replace with your EmailJS public key
       );
 
       toast({
