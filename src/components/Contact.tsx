@@ -4,10 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
   const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -16,21 +18,47 @@ export const Contact = () => {
     message: ""
   });
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
     
-    const subject = encodeURIComponent(`New Request From ${formData.company}`);
-    const body = encodeURIComponent(
-      `You have a new request from ${formData.firstName} ${formData.lastName}:\n\n${formData.message}`
-    );
-    
-    const mailtoLink = `mailto:David.djkservices@gmail.com?subject=${subject}&body=${body}`;
-    window.location.href = mailtoLink;
+    try {
+      await emailjs.send(
+        'service_djk', // Replace with your EmailJS service ID
+        'template_djk', // Replace with your EmailJS template ID
+        {
+          to_email: 'David.djkservices@gmail.com',
+          from_name: `${formData.firstName} ${formData.lastName}`,
+          from_email: formData.email,
+          company: formData.company,
+          message: formData.message,
+          subject: `New Request From ${formData.company}`,
+        },
+        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+      );
 
-    toast({
-      title: "Email client opened",
-      description: "Your message has been prepared in your default email client.",
-    });
+      toast({
+        title: "Message sent successfully",
+        description: "We'll get back to you as soon as possible.",
+      });
+
+      // Reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        company: "",
+        message: ""
+      });
+    } catch (error) {
+      toast({
+        title: "Error sending message",
+        description: "Please try again later or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -100,7 +128,9 @@ export const Contact = () => {
                   onChange={handleInputChange}
                   required
                 />
-                <Button type="submit" className="w-full">Send Message</Button>
+                <Button type="submit" className="w-full" disabled={isLoading}>
+                  {isLoading ? "Sending..." : "Send Message"}
+                </Button>
               </form>
             </CardContent>
           </Card>
