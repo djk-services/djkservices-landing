@@ -1,7 +1,7 @@
 
 import { cn } from "@/lib/utils";
 
-const logos = "/public/logos";
+const logos = "/logos";
 
 const clients = [
   {
