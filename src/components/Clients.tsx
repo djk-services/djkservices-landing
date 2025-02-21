@@ -1,26 +1,28 @@
 
 import { cn } from "@/lib/utils";
 
+const logos = "/public/logos";
+
 const clients = [
   {
     name: "American Express",
-    logo: "/logos/amex_logo.svg",
+    logo: `${logos}/amex.svg`,
   },
   {
     name: "Disney",
-    logo: "/logos/disney_logo.png",
+    logo: `${logos}/disney.png`,
   },
   {
     name: "Capital One",
-    logo: "/logos/capitalone_logo.png",
+    logo: `${logos}/capitalone.png`,
   },
   {
     name: "ReliaQuest",
-    logo: "/logos/reliaquest_logo.png",
+    logo: `${logos}/reliaquest.png`,
   },
   {
     name: "Twitch",
-    logo: "/logos/twitch_logo.svg",
+    logo: `${logos}/twitch.svg`,
   },
 ];
 
