@@ -1,7 +1,5 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import {
   Carousel,
   CarouselContent,
@@ -53,15 +51,12 @@ export const About = () => {
                       David is a veteran operator with over a decade of experience leading product and engineering teams across multiple industries. A former U.S. Navy servicemember, he brings disciplined execution and cross-functional leadership to every venture. David earned his Computer Engineering and Mathematics degree cum laude from the University of Florida and an MBA from Harvard Business School. He has scaled platforms to millions of users and navigated regulated markets. David combines technical depth with strategic insight to build products that win.
                     </p>
                   </div>
-                  <div className="order-1 md:order-2 flex justify-center">
-                    <Avatar className="w-48 h-48 border-4 border-primary/10">
-                      <AvatarImage 
-                        src="/lovable-uploads/03e291b6-b3a1-41a1-a11a-9d98b916e43f.png" 
-                        className="object-cover"
-                        alt="David Smith, CEO"
-                      />
-                      <AvatarFallback>DS</AvatarFallback>
-                    </Avatar>
+                  <div className="order-1 md:order-2 h-full">
+                    <img 
+                      src="/lovable-uploads/03e291b6-b3a1-41a1-a11a-9d98b916e43f.png" 
+                      className="w-full h-full object-cover rounded-lg"
+                      alt="David Smith, CEO"
+                    />
                   </div>
                 </CardContent>
               </Card>
@@ -78,15 +73,12 @@ export const About = () => {
                       Jon-Kyle oversees our technical strategy and innovation initiatives.
                     </p>
                   </div>
-                  <div className="order-1 md:order-2 flex justify-center">
-                    <Avatar className="w-48 h-48 border-4 border-primary/10">
-                      <AvatarImage 
-                        src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
-                        className="object-cover"
-                        alt="Jon-Kyle Smith, CTO"
-                      />
-                      <AvatarFallback>JKS</AvatarFallback>
-                    </Avatar>
+                  <div className="order-1 md:order-2 h-full">
+                    <img 
+                      src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                      className="w-full h-full object-cover rounded-lg"
+                      alt="Jon-Kyle Smith, CTO"
+                    />
                   </div>
                 </CardContent>
               </Card>
@@ -99,4 +91,3 @@ export const About = () => {
     </section>
   );
 };
-
