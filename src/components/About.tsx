@@ -76,7 +76,7 @@ export const About = () => {
                   <div className="order-1 md:order-2 aspect-square md:aspect-auto md:h-[400px]">
                     <img 
                       src="/lovable-uploads/696341a1-67e0-4102-969c-eee059a792dc.png" 
-                      className="w-full h-full object-cover object-top rounded-lg flex items-center justify-center margin-top: -300px"
+                      className="w-full h-full object-cover object-top rounded-lg margin-top: -300px"
                       alt="Jon-Kyle Smith, CTO"
                     />
                   </div>
