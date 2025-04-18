@@ -32,16 +32,29 @@ export const Clients = () => {
       <div className="container max-w-6xl mx-auto">
         <p className="text-center text-muted-foreground mb-8">Trusted by Top Industry Leaders</p>
         <div className="relative w-full overflow-hidden">
-          <div className="animate-marquee flex items-center space-x-16 px-4">
-            {[...clients, ...clients].map((client, index) => (
-              <div key={`${client.name}-${index}`} className="flex-shrink-0 w-32 h-16 flex items-center justify-center">
-                <img 
-                  src={client.logo} 
-                  alt={client.name} 
-                  className="max-w-full max-h-full object-contain" 
-                />
-              </div>
-            ))}
+          <div className="flex">
+            <div className="animate-marquee flex items-center space-x-16 px-4">
+              {clients.map((client, index) => (
+                <div key={`${client.name}-${index}`} className="flex-shrink-0 w-32 h-16 flex items-center justify-center">
+                  <img 
+                    src={client.logo} 
+                    alt={client.name} 
+                    className="max-w-full max-h-full object-contain" 
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="animate-marquee flex items-center space-x-16 px-4">
+              {clients.map((client, index) => (
+                <div key={`${client.name}-second-${index}`} className="flex-shrink-0 w-32 h-16 flex items-center justify-center">
+                  <img 
+                    src={client.logo} 
+                    alt={client.name} 
+                    className="max-w-full max-h-full object-contain" 
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
