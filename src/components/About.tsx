@@ -1,6 +1,14 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export const About = () => {
   return (
@@ -33,41 +41,62 @@ export const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold mt-4">Meet Our Founders</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Card className="p-6 animate-fadeIn">
-            <CardContent className="p-0 flex flex-col items-center text-center">
-              <Avatar className="w-32 h-32 border-4 border-primary/10 overflow-hidden">
-                <AvatarImage 
-                  src="/lovable-uploads/03e291b6-b3a1-41a1-a11a-9d98b916e43f.png" 
-                  className="object-cover w-full h-full"
-                  alt="David Smith, CEO"
-                />
-                <AvatarFallback>DS</AvatarFallback>
-              </Avatar>
-              <h3 className="text-2xl font-bold mt-6">David Smith</h3>
-              <p className="text-primary font-medium mb-4">Chief Executive Officer</p>
-              <p className="text-muted-foreground">
-                David is a veteran operator with over a decade of experience leading product and engineering teams across multiple industries. A former U.S. Navy servicemember, he brings disciplined execution and cross-functional leadership to every venture. David earned his Computer Engineering and Mathematics degree cum laude from the University of Florida and an MBA from Harvard Business School. He has scaled platforms to millions of users and navigated regulated markets. David combines technical depth with strategic insight to build products that win.
-              </p>
-            </CardContent>
-          </Card>
+        <Carousel opts={{ align: "start" }} className="w-full max-w-4xl mx-auto">
+          <CarouselContent>
+            <CarouselItem>
+              <Card className="p-6">
+                <CardContent className="p-0 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                  <div className="order-2 md:order-1">
+                    <h3 className="text-2xl font-bold mb-2">David Smith</h3>
+                    <p className="text-primary font-medium mb-4">Chief Executive Officer</p>
+                    <p className="text-muted-foreground">
+                      David is a veteran operator with over a decade of experience leading product and engineering teams across multiple industries. A former U.S. Navy servicemember, he brings disciplined execution and cross-functional leadership to every venture. David earned his Computer Engineering and Mathematics degree cum laude from the University of Florida and an MBA from Harvard Business School. He has scaled platforms to millions of users and navigated regulated markets. David combines technical depth with strategic insight to build products that win.
+                    </p>
+                  </div>
+                  <div className="order-1 md:order-2 flex justify-center">
+                    <Avatar className="w-48 h-48 border-4 border-primary/10">
+                      <AvatarImage 
+                        src="/lovable-uploads/03e291b6-b3a1-41a1-a11a-9d98b916e43f.png" 
+                        className="object-cover"
+                        alt="David Smith, CEO"
+                      />
+                      <AvatarFallback>DS</AvatarFallback>
+                    </Avatar>
+                  </div>
+                </CardContent>
+              </Card>
+            </CarouselItem>
 
-          <Card className="p-6 animate-fadeIn [animation-delay:200ms]">
-            <CardContent className="p-0 flex flex-col items-center text-center">
-              <Avatar className="w-32 h-32 border-4 border-primary/10">
-                <AvatarImage src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" />
-                <AvatarFallback>JKS</AvatarFallback>
-              </Avatar>
-              <h3 className="text-2xl font-bold mt-6">Jon-Kyle Smith</h3>
-              <p className="text-primary font-medium mb-4">Chief Technology Officer</p>
-              <p className="text-muted-foreground">
-                A visionary tech leader with expertise in cybersecurity and scalable architectures,
-                Jon-Kyle oversees our technical strategy and innovation initiatives.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
+            <CarouselItem>
+              <Card className="p-6">
+                <CardContent className="p-0 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                  <div className="order-2 md:order-1">
+                    <h3 className="text-2xl font-bold mb-2">Jon-Kyle Smith</h3>
+                    <p className="text-primary font-medium mb-4">Chief Technology Officer</p>
+                    <p className="text-muted-foreground">
+                      A visionary tech leader with expertise in cybersecurity and scalable architectures,
+                      Jon-Kyle oversees our technical strategy and innovation initiatives.
+                    </p>
+                  </div>
+                  <div className="order-1 md:order-2 flex justify-center">
+                    <Avatar className="w-48 h-48 border-4 border-primary/10">
+                      <AvatarImage 
+                        src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                        className="object-cover"
+                        alt="Jon-Kyle Smith, CTO"
+                      />
+                      <AvatarFallback>JKS</AvatarFallback>
+                    </Avatar>
+                  </div>
+                </CardContent>
+              </Card>
+            </CarouselItem>
+          </CarouselContent>
+          <CarouselPrevious className="left-0 md:-left-12" />
+          <CarouselNext className="right-0 md:-right-12" />
+        </Carousel>
       </div>
     </section>
   );
 };
+
