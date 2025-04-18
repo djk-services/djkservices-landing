@@ -36,8 +36,12 @@ export const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card className="p-6 animate-fadeIn">
             <CardContent className="p-0 flex flex-col items-center text-center">
-              <Avatar className="w-32 h-32 border-4 border-primary/10">
-                <AvatarImage src="/lovable-uploads/03e291b6-b3a1-41a1-a11a-9d98b916e43f.png" />
+              <Avatar className="w-32 h-32 border-4 border-primary/10 overflow-hidden">
+                <AvatarImage 
+                  src="/lovable-uploads/03e291b6-b3a1-41a1-a11a-9d98b916e43f.png" 
+                  className="object-cover w-full h-full"
+                  alt="David Smith, CEO"
+                />
                 <AvatarFallback>DS</AvatarFallback>
               </Avatar>
               <h3 className="text-2xl font-bold mt-6">David Smith</h3>
