@@ -48,7 +48,7 @@ export const About = () => {
                     <h3 className="text-2xl font-bold mb-2">David Smith</h3>
                     <p className="text-primary font-medium mb-4">Chief Executive Officer</p>
                     <p className="text-muted-foreground">
-                      David is a veteran operator with over a decade of experience leading product and engineering teams across multiple industries. A former U.S. Navy servicemember, he brings disciplined execution and cross-functional leadership to every venture. David earned his Computer Engineering and Mathematics degree cum laude from the University of Florida and an MBA from Harvard Business School. He has scaled platforms to millions of users and navigated regulated markets. David combines technical depth with strategic insight to build products that win.
+                      David is a veteran operator with over a decade of experience leading product and engineering teams across multiple industries. A former U.S. Navy servicemember, he brings disciplined execution and cross-functional leadership to every venture. David earned his Computer Engineering and Mathematics degree cum laude from the University of Florida and an MBA from Harvard Business School. With his unique experience scaling platforms to millions of users and navigating regulated markets, David combines technical depth with strategic insight to build products that win.
                     </p>
                   </div>
                   <div className="order-1 md:order-2 aspect-square md:aspect-auto md:h-[400px]">
