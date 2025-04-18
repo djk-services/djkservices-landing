@@ -43,7 +43,7 @@ export const About = () => {
           <CarouselContent>
             <CarouselItem>
               <Card className="p-6">
-                <CardContent className="p-0 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <CardContent className="p-0 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
                   <div className="order-2 md:order-1">
                     <h3 className="text-2xl font-bold mb-2">David Smith</h3>
                     <p className="text-primary font-medium mb-4">Chief Executive Officer</p>
@@ -51,7 +51,7 @@ export const About = () => {
                       David is a veteran operator with over a decade of experience leading product and engineering teams across multiple industries. A former U.S. Navy servicemember, he brings disciplined execution and cross-functional leadership to every venture. David earned his Computer Engineering and Mathematics degree cum laude from the University of Florida and an MBA from Harvard Business School. He has scaled platforms to millions of users and navigated regulated markets. David combines technical depth with strategic insight to build products that win.
                     </p>
                   </div>
-                  <div className="order-1 md:order-2 h-full">
+                  <div className="order-1 md:order-2 aspect-square md:aspect-auto md:h-[400px]">
                     <img 
                       src="/lovable-uploads/03e291b6-b3a1-41a1-a11a-9d98b916e43f.png" 
                       className="w-full h-full object-cover rounded-lg"
@@ -64,7 +64,7 @@ export const About = () => {
 
             <CarouselItem>
               <Card className="p-6">
-                <CardContent className="p-0 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <CardContent className="p-0 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
                   <div className="order-2 md:order-1">
                     <h3 className="text-2xl font-bold mb-2">Jon-Kyle Smith</h3>
                     <p className="text-primary font-medium mb-4">Chief Technology Officer</p>
@@ -73,7 +73,7 @@ export const About = () => {
                       Jon-Kyle oversees our technical strategy and innovation initiatives.
                     </p>
                   </div>
-                  <div className="order-1 md:order-2 h-full">
+                  <div className="order-1 md:order-2 aspect-square md:aspect-auto md:h-[400px]">
                     <img 
                       src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
                       className="w-full h-full object-cover rounded-lg"
