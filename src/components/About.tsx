@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -38,7 +37,7 @@ export const About = () => {
           <Card className="p-6 animate-fadeIn">
             <CardContent className="p-0 flex flex-col items-center text-center">
               <Avatar className="w-32 h-32 border-4 border-primary/10">
-                <AvatarImage src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" />
+                <AvatarImage src="/lovable-uploads/03e291b6-b3a1-41a1-a11a-9d98b916e43f.png" />
                 <AvatarFallback>DS</AvatarFallback>
               </Avatar>
               <h3 className="text-2xl font-bold mt-6">David Smith</h3>
