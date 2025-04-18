@@ -77,7 +77,7 @@ export const About = () => {
                     <img 
                       src="/lovable-uploads/71006c49-1b09-4104-9c7e-571b567b68c2.png" 
                       className="size-full object-cover rounded-lg"
-                      style={{ objectPosition: '30% 30px' }}
+                      style={{ objectPosition: '30%' }}
                       alt="Jon-Kyle Smith, CTO"
                     />
                   </div>
