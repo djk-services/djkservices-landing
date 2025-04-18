@@ -66,10 +66,15 @@ export default {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(0)" },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' }
+        }
       },
       animation: {
         fadeIn: "fadeIn 0.5s ease-out",
         slideIn: "slideIn 0.5s ease-out",
+        marquee: "marquee 25s linear infinite"
       },
     },
   },
