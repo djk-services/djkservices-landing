@@ -69,7 +69,7 @@ export const About = () => {
                     <h3 className="text-2xl font-bold mb-2">Jon-Kyle Smith</h3>
                     <p className="text-primary font-medium mb-4">Chief Technology Officer</p>
                     <p className="text-muted-foreground">
-                      Jon-Kyle (JK) is a seasoned Systems Architect and Cybersecurity Specialist with a track record of leading complex, cross-functional initiatives. With deep expertise in securing infrastructure, penetration testing, and scaling systems for international use, JK has contributed to high-impact projects across diverse teams and technical domains. He graduated magna cum laude with a degree in Computer Science from the University of Florida and brings a rigorous, detail-oriented approach to solving today's most demanding technology challenges.
+                      Jon-Kyle (JK) is a seasoned Systems Architect and Cybersecurity Specialist with a track record of leading complex, cross-functional initiatives. With deep expertise in securing infrastructure, penetration testing, and scaling systems for international campaigns, JK has contributed to high-impact projects across diverse teams and technical domains. He graduated magna cum laude with a degree in Computer Science from the University of Florida and brings a rigorous, detail-oriented approach to solving today's most demanding technology challenges.
                     </p>
                   </div>
                   <div className="order-1 md:order-2 aspect-square md:aspect-auto md:h-[400px]">
