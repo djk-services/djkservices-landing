@@ -33,8 +33,8 @@ export const Clients = () => {
         <p className="text-center text-muted-foreground mb-8">Trusted by Top Industry Leaders</p>
         <div className="relative w-full overflow-hidden">
           <div className="animate-marquee flex items-center space-x-16 px-4">
-            {clients.map((client, index) => (
-              <div key={client.name} className="flex-shrink-0 w-32 h-16 flex items-center justify-center">
+            {[...clients, ...clients].map((client, index) => (
+              <div key={`${client.name}-${index}`} className="flex-shrink-0 w-32 h-16 flex items-center justify-center">
                 <img 
                   src={client.logo} 
                   alt={client.name} 
