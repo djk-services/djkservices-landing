@@ -31,11 +31,15 @@ export const Clients = () => {
     <div className="w-full bg-muted/30 py-12 overflow-hidden">
       <div className="container max-w-6xl mx-auto">
         <p className="text-center text-muted-foreground mb-8">Trusted by Top Industry Leaders</p>
-        <div className="relative flex overflow-hidden">
+        <div className="relative w-full overflow-hidden">
           <div className="animate-marquee flex items-center space-x-16 px-4">
-            {clients.map((client) => (
-              <div key={client.name} className="flex-shrink-0">
-                <img src={client.logo} alt={client.name} className="w-32 h-12 object-contain" />
+            {[...clients, ...clients].map((client, index) => (
+              <div key={`${client.name}-${index}`} className="flex-shrink-0">
+                <img 
+                  src={client.logo} 
+                  alt={client.name} 
+                  className="w-32 h-12 object-contain" 
+                />
               </div>
             ))}
           </div>
