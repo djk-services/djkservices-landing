@@ -75,7 +75,7 @@ export const About = () => {
                   </div>
                   <div className="order-1 md:order-2 aspect-square md:aspect-auto md:h-[400px]">
                     <img 
-                      src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                      src="/lovable-uploads/696341a1-67e0-4102-969c-eee059a792dc.png" 
                       className="w-full h-full object-cover rounded-lg"
                       alt="Jon-Kyle Smith, CTO"
                     />
