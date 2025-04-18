@@ -54,7 +54,7 @@ export const About = () => {
                   <div className="order-1 md:order-2 aspect-square md:aspect-auto md:h-[400px]">
                     <img 
                       src="/lovable-uploads/03e291b6-b3a1-41a1-a11a-9d98b916e43f.png" 
-                      className="w-full h-full object-cover rounded-lg"
+                      className="size-full object-cover rounded-lg"
                       alt="David Smith, CEO"
                     />
                   </div>
@@ -76,7 +76,7 @@ export const About = () => {
                   <div className="order-1 md:order-2 aspect-square md:aspect-auto md:h-[400px]">
                     <img 
                       src="/lovable-uploads/b9fbf356-0689-4d09-ac82-45b4fbe8fe26.png" 
-                      className="size-fit object-cover rounded-lg"
+                      className="size-full object-cover rounded-lg"
                       alt="Jon-Kyle Smith, CTO"
                     />
                   </div>
