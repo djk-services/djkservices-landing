@@ -23,14 +23,14 @@ const clients = [
   {
     name: "Twitch",
     logo: `${logos}/twitch.svg`,
-  },
+  }
 ];
 
 export const Clients = () => {
   return (
     <div className="w-full bg-muted/30 py-12">
       <div className="container max-w-6xl mx-auto">
-        <p className="text-center text-muted-foreground mb-8">Trusted by industry leaders</p>
+        <p className="text-center text-muted-foreground mb-8">Trusted by Top Industry Leaders</p>
         <div className="relative flex overflow-hidden">
           <div className="animate-marquee flex items-center space-x-16 px-4">
             {clients.map((client) => (
