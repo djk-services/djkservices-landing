@@ -50,7 +50,7 @@ export const Clients = () => {
                   <img 
                     src={client.logo} 
                     alt={client.name} 
-                    className="max-w-full max-h-full object-contain" 
+                    className="max-w-full max-h-full object-contain dark:invert dark:hue-rotate-180 dark:contrast-90 dark:brightness-100" 
                   />
                 </div>
               ))}
