@@ -40,14 +40,14 @@ export const Clients = () => {
             ))}
           </div>
           
-          {/* Create a duplicate set of logos for continuous scrolling effect */}
+          {/* {/* Create a duplicate set of logos for continuous scrolling effect 
           <div className="animate-marquee flex items-center space-x-16 px-4">
             {clients.map((client) => (
               <div key={`${client.name}-repeat`} className="flex-shrink-0">
                 <img src={client.logo} alt={client.name} className="w-32 h-12 object-contain" />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
